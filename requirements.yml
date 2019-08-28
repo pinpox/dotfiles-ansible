@@ -1,0 +1,16 @@
+- src: git@git.pablo.tools:pablo/ansible-vim.git
+  name: ansible-vim
+  scm: git
+
+- src: git@git.pablo.tools:pablo/ansible-i3.git
+  name: ansible-i3
+  scm: git
+
+- src: git@git.pablo.tools:pablo/ansible-termite.git
+  name: ansible-termite
+  scm: git
+
+- src: git@git.pablo.tools:pablo/ansible-xresources.git
+  name: ansible-xresources
+  scm: git
+
