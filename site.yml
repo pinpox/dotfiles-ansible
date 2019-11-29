@@ -5,6 +5,7 @@
      - ansible-vim
      - ansible-i3
      - ansible-termite
+     - ansible-neomutt
 
  - hosts: zitrone
    roles:
@@ -12,6 +13,7 @@
      - ansible-vim
      - ansible-i3
      - ansible-termite
+     - ansible-neomutt
 
  - hosts: lauch
    roles:
