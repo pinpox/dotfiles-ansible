@@ -1,4 +1,20 @@
 ---
- - hosts: all
+ - hosts: kartoffel
    roles:
      - ansible-xresources
+     - ansible-vim
+
+ - hosts: zitrone
+   roles:
+     - ansible-xresources
+     - ansible-vim
+
+ - hosts: lauch
+   roles:
+     - ansible-vim
+
+ - hosts: buche
+   roles:
+     - ansible-vim
+
+
