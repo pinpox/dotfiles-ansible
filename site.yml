@@ -3,11 +3,15 @@
    roles:
      - ansible-xresources
      - ansible-vim
+     - ansible-i3
+     - ansible-termite
 
  - hosts: zitrone
    roles:
      - ansible-xresources
      - ansible-vim
+     - ansible-i3
+     - ansible-termite
 
  - hosts: lauch
    roles:
