@@ -13,3 +13,14 @@ ansible-galaxy install -r requirements.yml -p roles
 ```
 ansible-playbook -i inventory  site.yml
 ```
+
+## Roles used
+
+- [](https://github.com/binaryplease/ansible-i3)
+- [](https://github.com/binaryplease/ansible-neomutt)
+- [](https://github.com/binaryplease/ansible-polybar)
+- [](https://github.com/binaryplease/ansible-rofi)
+- [](https://github.com/binaryplease/ansible-termite)
+- [](https://github.com/binaryplease/ansible-tmux)
+- [](https://github.com/binaryplease/ansible-vim)
+- [](https://github.com/binaryplease/ansible-xresources)
