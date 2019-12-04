@@ -7,6 +7,7 @@
      - ansible-termite
      - ansible-neomutt
      - ansible-tmux
+     - ansible-polybar
 
  - hosts: zitrone
    roles:
@@ -16,6 +17,7 @@
      - ansible-termite
      - ansible-neomutt
      - ansible-tmux
+     - ansible-polybar
 
  - hosts: lauch
    roles:
