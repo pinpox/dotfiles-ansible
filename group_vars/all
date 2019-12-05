@@ -1,5 +1,6 @@
 ---
 scheme: "OneDark"
+scheme: "base16-onedark"
 author: "Lalit Magant (http://github.com/tilal6991)"
 
 base00: "282c34"
