@@ -24,3 +24,4 @@ ansible-playbook -i inventory  site.yml
 - [ansible-tmux](https://github.com/binaryplease/ansible-tmux)
 - [ansible-vim](https://github.com/binaryplease/ansible-vim)
 - [ansible-xresources](https://github.com/binaryplease/ansible-xresources)
+- [ansible-zsh](https://github.com/binaryplease/ansible-zsh)

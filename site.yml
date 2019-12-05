@@ -8,6 +8,7 @@
      - ansible-neomutt
      - ansible-tmux
      - ansible-polybar
+     - ansible-zsh
 
  - hosts: zitrone
    roles:
@@ -18,15 +19,18 @@
      - ansible-neomutt
      - ansible-tmux
      - ansible-polybar
+     - ansible-zsh
 
  - hosts: lauch
    roles:
      - ansible-vim
      - ansible-tmux
+     - ansible-zsh
 
  - hosts: buche
    roles:
      - ansible-vim
      - ansible-tmux
+     - ansible-zsh
 
 
