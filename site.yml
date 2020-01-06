@@ -27,6 +27,12 @@
      - ansible-tmux
      - ansible-zsh
 
+ - hosts: kfbox
+   roles:
+     - ansible-vim
+     - ansible-tmux
+     - ansible-zsh
+
  - hosts: buche
    roles:
      - ansible-vim

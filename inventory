@@ -2,3 +2,4 @@ kartoffel ansible_connection=local
 zitrone ansible_user=binaryplease
 buche ansible_user=binaryplease
 lauch ansible_user=binaryplease
+kfbox ansible_user=pablo
