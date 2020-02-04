@@ -34,3 +34,6 @@
   name: ansible-zsh
   scm: git
 
+- src: https://github.com/binaryplease/ansible-alacritty.git
+  name: ansible-alacritty
+  scm: git

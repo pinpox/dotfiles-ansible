@@ -2,6 +2,7 @@
  - hosts: kartoffel
    roles:
      - ansible-xresources
+     - ansible-alacritty
      - ansible-vim
      - ansible-i3
      - ansible-termite
@@ -12,6 +13,7 @@
 
  - hosts: zitrone
    roles:
+     - ansible-alacritty
      - ansible-xresources
      - ansible-vim
      - ansible-i3
