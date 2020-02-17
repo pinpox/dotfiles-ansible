@@ -10,6 +10,7 @@
      - ansible-tmux
      - ansible-polybar
      - ansible-zsh
+     - ansible-xscreensaver
 
  - hosts: zitrone
    roles:
@@ -22,6 +23,20 @@
      - ansible-tmux
      - ansible-polybar
      - ansible-zsh
+     - ansible-xscreensaver
+
+ - hosts: analysis-poc
+   roles:
+     - ansible-xresources
+     - ansible-alacritty
+     - ansible-vim
+     - ansible-i3
+     - ansible-termite
+     - ansible-neomutt
+     - ansible-tmux
+     - ansible-polybar
+     - ansible-zsh
+     - ansible-xscreensaver
 
  - hosts: lauch
    roles:
