@@ -4,3 +4,4 @@ buche ansible_user=binaryplease
 lauch ansible_user=binaryplease
 birne ansible_user=binaryplease
 kfbox ansible_user=pablo
+analysis-poc ansible_user=pablo
