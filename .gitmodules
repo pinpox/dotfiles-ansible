@@ -16,3 +16,9 @@
 [submodule "roles/ansible-termite"]
 	path = roles/ansible-termite
 	url = git@github.com:pinpox/ansible-termite.git
+[submodule "roles/ansible-zsh"]
+	path = roles/ansible-zsh
+	url = git@github.com:pinpox/ansible-zsh.git
+[submodule "roles/ansible-xresources"]
+	path = roles/ansible-xresources
+	url = git@github.com:pinpox/ansible-xresources.git
