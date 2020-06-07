@@ -4,3 +4,6 @@
 [submodule "roles/ansible-i3"]
 	path = roles/ansible-i3
 	url = git@github.com:pinpox/ansible-i3.git
+[submodule "roles/ansible-neomutt"]
+	path = roles/ansible-neomutt
+	url = git@github.com:pinpox/ansible-neomutt.git
