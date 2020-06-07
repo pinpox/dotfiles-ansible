@@ -13,3 +13,6 @@
 [submodule "roles/ansible-rofi"]
 	path = roles/ansible-rofi
 	url = git@github.com:pinpox/ansible-rofi.git
+[submodule "roles/ansible-termite"]
+	path = roles/ansible-termite
+	url = git@github.com:pinpox/ansible-termite.git
