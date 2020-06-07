@@ -7,3 +7,6 @@
 [submodule "roles/ansible-neomutt"]
 	path = roles/ansible-neomutt
 	url = git@github.com:pinpox/ansible-neomutt.git
+[submodule "roles/ansible-polybar"]
+	path = roles/ansible-polybar
+	url = git@github.com:pinpox/ansible-polybar.git
