@@ -10,3 +10,6 @@
 [submodule "roles/ansible-polybar"]
 	path = roles/ansible-polybar
 	url = git@github.com:pinpox/ansible-polybar.git
+[submodule "roles/ansible-rofi"]
+	path = roles/ansible-rofi
+	url = git@github.com:pinpox/ansible-rofi.git
