@@ -28,3 +28,6 @@
 [submodule "roles/ansible-vim"]
 	path = roles/ansible-vim
 	url = git@github.com:pinpox/ansible-vim.git
+[submodule "roles/ansible-xfce4-terminal"]
+	path = roles/ansible-xfce4-terminal
+	url = git@github.com:pinpox/ansible-xfce4-terminal.git
