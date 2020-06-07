@@ -37,3 +37,7 @@
 - src: https://github.com/binaryplease/ansible-alacritty.git
   name: ansible-alacritty
   scm: git
+
+- src: https://github.com/binaryplease/ansible-xscreensaver.git
+  name: ansible-xscreensaver
+  scm: git
