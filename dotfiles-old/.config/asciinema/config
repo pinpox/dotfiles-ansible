@@ -1,0 +1,7 @@
+[api]
+token = fd8c6fc6-db54-4b2f-b9b1-864e8399e0c4
+
+[record]
+
+idle_time_limit = 1
+maxwait = 2

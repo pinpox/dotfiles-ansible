@@ -1,0 +1,54 @@
+CopyArrivalDate yes
+
+# Personal
+IMAPAccount mailbox
+Host imap.mailbox.org
+SSLType IMAPS
+SSLVersions TLSv1.2
+User pablo1@mailbox.org
+PassCmd "pass mailbox.org/pablo1"
+
+IMAPStore mailbox-remote
+Account mailbox
+
+MaildirStore mailbox-local
+# The trailing "/" is important
+Path ~/mail/mailbox/
+Inbox ~/mail/mailbox/INBOX
+# Flatten .
+
+Channel mailbox
+Master :mailbox-remote:
+Slave :mailbox-local:
+Patterns INBOX Travel Archive Sent Spam Trash Archives
+Expunge Both
+SyncState *
+Sync All
+Create Both
+
+
+# Work
+IMAPAccount committance
+Host imap.1und1.com
+SSLType IMAPS
+SSLVersions TLSv1.2
+User pablo.ovelleiro@committance.com
+PassCmd "pass committance/pablo.ovelleiro@committance.com"
+
+IMAPStore committance-remote
+Account committance
+
+MaildirStore committance-local
+# The trailing "/" is important
+Path ~/mail/committance/
+Inbox ~/mail/committance/INBOX
+# Flatten .
+
+Channel committance
+Master :committance-remote:
+Slave :committance-local:
+Patterns INBOX Travel Archive Sent Spam Trash
+Expunge Both
+SyncState *
+Sync All
+Create Both

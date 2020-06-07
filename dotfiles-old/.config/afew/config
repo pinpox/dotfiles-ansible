@@ -1,0 +1,7 @@
+[MailMover]
+rename = true
+folders = mailbox/INBOX committance/INBOX
+
+# rules
+committance/INBOX = 'tag:archived':committance/Archive 'tag:deleted':committance/Trash
+mailbox/INBOX = 'tag:archived':mailbox/Archive 'tag:deleted':mailbox/Trash
