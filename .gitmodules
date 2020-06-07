@@ -1,3 +1,6 @@
 [submodule "roles/ansible-alacritty"]
 	path = roles/ansible-alacritty
 	url = git@github.com:pinpox/ansible-alacritty.git
+[submodule "roles/ansible-i3"]
+	path = roles/ansible-i3
+	url = git@github.com:pinpox/ansible-i3.git
