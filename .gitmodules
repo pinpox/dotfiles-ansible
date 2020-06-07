@@ -31,3 +31,6 @@
 [submodule "roles/ansible-xfce4-terminal"]
 	path = roles/ansible-xfce4-terminal
 	url = git@github.com:pinpox/ansible-xfce4-terminal.git
+[submodule "roles/ansible-fonts"]
+	path = roles/ansible-fonts
+	url = git@github.com:pinpox/ansible-fonts.git
