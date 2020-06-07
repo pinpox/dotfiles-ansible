@@ -22,3 +22,6 @@
 [submodule "roles/ansible-xresources"]
 	path = roles/ansible-xresources
 	url = git@github.com:pinpox/ansible-xresources.git
+[submodule "roles/ansible-tmux"]
+	path = roles/ansible-tmux
+	url = git@github.com:pinpox/ansible-tmux.git
