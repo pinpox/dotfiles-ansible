@@ -25,3 +25,6 @@
 [submodule "roles/ansible-tmux"]
 	path = roles/ansible-tmux
 	url = git@github.com:pinpox/ansible-tmux.git
+[submodule "roles/ansible-vim"]
+	path = roles/ansible-vim
+	url = git@github.com:pinpox/ansible-vim.git
