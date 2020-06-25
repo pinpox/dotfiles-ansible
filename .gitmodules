@@ -34,3 +34,6 @@
 [submodule "roles/ansible-fonts"]
 	path = roles/ansible-fonts
 	url = git@github.com:pinpox/ansible-fonts.git
+[submodule "roles/ansible-xscreensaver"]
+	path = roles/ansible-xscreensaver
+	url = git@github.com:pinpox/ansible-xscreensaver.git
