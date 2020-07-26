@@ -1,0 +1,70 @@
+[options]
+# font = monospace 7
+# font   = xos4 Terminus 14px
+# font = Office Code Pro
+font = RobotoMono 14px
+# font = Victor Mono Medium 14px
+audible_bell        = false
+scroll_on_output    = false
+scroll_on_keystroke = true
+allow_bold          = true
+mouse_autohide      = false
+dynamic_title       = true
+urgent_on_bell      = true
+clickable_url       = true
+scrollback_lines    = 10000
+search_wrap         = true
+# cell_height_scale = 1.5
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+browser = xdg-open
+
+[colors]
+# Base16 OneDark
+# Author: Lalit Magant (http://github.com/tilal6991)
+
+foreground          = #abb2bf
+foreground_bold     = #b6bdca
+cursor              = #61a3ef
+cursor_foreground   = #282c34
+background          = rgba(40, 44, 52)
+
+# 16 color space
+
+# Black, Gray, Silver, White
+color0  = #282c34
+color8  = #545862
+color7  = #abb2bf
+color15 = #c8ccd4
+
+# Red
+color1  = #e06c75
+color9  = #e06c75
+
+# Green
+color2  = #98c379
+color10 = #98c379
+
+# Yellow
+color3  = #e5c07b
+color11 = #e5c07b
+
+# Blue
+color4  = #61afef
+color12 = #61afef
+
+# Purple
+color5  = #c678dd
+color13 = #c678dd
+
+# Teal
+color6  = #56b6c2
+color14 = #56b6c2
+
+# Extra colors
+color16 = #d19a66
+color17 = #be5046
+color18 = #353b45
+color19 = #3e4451
+color20 = #565c64
+color21 = #b6bdca

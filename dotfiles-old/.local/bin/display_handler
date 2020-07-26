@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#srandrd display_handler
+
+case "$SRANDRD_ACTION" in
+		"HDMI-0 connected") xrandr --output VGA-0 --off --output LVDS-0 --mode 1920x1080 --pos 1920x72 --rotate normal --output HDMI-0 --mode 1920x1200 --pos 3840x0 --rotate normal;;
+		"HDMI-0 disconnected") xrandr --output VGA-0 --off --output LVDS-0 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-0 --off;;
+esac
+
+
+

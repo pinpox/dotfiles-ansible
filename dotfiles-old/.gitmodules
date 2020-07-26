@@ -1,0 +1,9 @@
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = git@github.com:binaryplease/dotfiles-emacs.git
+[submodule "/home/binaryplease/.tmux/plugins/tpm"]
+	path = /home/binaryplease/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule ".vim"]
+	path = .vim
+	url = git@github.com:binaryplease/dotfiles-vim.git

@@ -1,0 +1,36 @@
+[submodule "roles/ansible-alacritty"]
+	path = roles/ansible-alacritty
+	url = git@github.com:pinpox/ansible-alacritty.git
+[submodule "roles/ansible-i3"]
+	path = roles/ansible-i3
+	url = git@github.com:pinpox/ansible-i3.git
+[submodule "roles/ansible-neomutt"]
+	path = roles/ansible-neomutt
+	url = git@github.com:pinpox/ansible-neomutt.git
+[submodule "roles/ansible-polybar"]
+	path = roles/ansible-polybar
+	url = git@github.com:pinpox/ansible-polybar.git
+[submodule "roles/ansible-rofi"]
+	path = roles/ansible-rofi
+	url = git@github.com:pinpox/ansible-rofi.git
+[submodule "roles/ansible-termite"]
+	path = roles/ansible-termite
+	url = git@github.com:pinpox/ansible-termite.git
+[submodule "roles/ansible-zsh"]
+	path = roles/ansible-zsh
+	url = git@github.com:pinpox/ansible-zsh.git
+[submodule "roles/ansible-xresources"]
+	path = roles/ansible-xresources
+	url = git@github.com:pinpox/ansible-xresources.git
+[submodule "roles/ansible-tmux"]
+	path = roles/ansible-tmux
+	url = git@github.com:pinpox/ansible-tmux.git
+[submodule "roles/ansible-vim"]
+	path = roles/ansible-vim
+	url = git@github.com:pinpox/ansible-vim.git
+[submodule "roles/ansible-xfce4-terminal"]
+	path = roles/ansible-xfce4-terminal
+	url = git@github.com:pinpox/ansible-xfce4-terminal.git
+[submodule "roles/ansible-fonts"]
+	path = roles/ansible-fonts
+	url = git@github.com:pinpox/ansible-fonts.git

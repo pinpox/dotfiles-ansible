@@ -1,0 +1,55 @@
+[user]
+	email = pablo1@mailbox.org
+	name = Pablo Ovelleiro Corral
+	signingkey = D03B218CAE771F77D7F920D9823A6154426408D3
+[credential]
+	helper = /usr/bin/pass-git-helper
+[commit]
+	gpgsign = true
+[url "pablo.tools"]
+	insteadOf = sellerie.duckdns.org
+
+[pack]
+	threads = 0
+[color]
+	ui = auto
+[core]
+	excludesfile = /home/binaryplease/.gitignore_global
+	autocrlf = input
+	safecrlf = true
+	editor = nvim
+
+[alias]
+    l = log --oneline --decorate --graph
+
+    ll = log --graph --abbrev-commit --decorate \
+    --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ai)%C(reset) \
+    %C(white)%s%C(reset) %C(dim red)- %an%C(reset)%C(bold yellow)%d%C(reset)'
+
+    lll = log --graph --abbrev-commit --decorate \
+    --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) \
+    %C(white)%s%C(reset) %C(dim red)- %an%C(reset)%C(bold yellow)%d%C(reset)' \
+    --branches
+
+    co = checkout
+    ci = commit
+    man = help
+    h = help
+    a = add
+    f = fetch
+    d = diff
+    dc = diff --cached
+    dt = difftool
+    dtc = difftool --cached
+    ds = diff --stat
+    dsc = diff --stat --cached
+    s = status --short --branch
+    b = branch
+
+[diff]
+    algorithm = patience
+	tool = meld
+[gpg]
+	program = gpg
+[difftool]
+	prompt = false

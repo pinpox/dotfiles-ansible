@@ -1,0 +1,25 @@
+zsh-users/zsh-completions
+zsh-users/zsh-syntax-highlighting
+mafredri/zsh-async
+rupa/z
+
+# From Oh-my-ZSH
+robbyrussell/oh-my-zsh folder:lib/completion
+
+# From Prezto
+sorin-ionescu/prezto
+sorin-ionescu/prezto folder:modules/utility
+sorin-ionescu/prezto folder:modules/completion
+sorin-ionescu/prezto folder:modules/environment
+sorin-ionescu/prezto folder:modules/terminal
+sorin-ionescu/prezto folder:modules/editor
+sorin-ionescu/prezto folder:modules/history
+sorin-ionescu/prezto folder:modules/directory
+sorin-ionescu/prezto folder:modules/syntax-highlighting
+sorin-ionescu/prezto folder:modules/zsh-history-substring-search
+
+# # Other
+sindresorhus/pure
+ael-code/zsh-colored-man-pages
+
+momo-lab/zsh-abbrev-alias

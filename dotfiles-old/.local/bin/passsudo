@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+pass local/$USER@`hostname` | head -n1

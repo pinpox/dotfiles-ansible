@@ -1,0 +1,84 @@
+# vim: syntax=muttrc
+
+##### Accounts
+folder-hook 'acc1_folder' 'source ~/.config/neomutt/acc1' # Read configuratoin of first account when switching to folder
+folder-hook 'acc2_folder' 'source ~/.config/neomutt/acc2' # Read configuratoin of second account when switching to folder
+folder-hook 'acc3_folder' 'source ~/.config/neomutt/acc3' # Read configuratoin of thrid account when switching to folder
+
+source ~/.config/neomutt/acc1 # Default account
+macro index <f2> '<sync-mailbox><enter-command>source ~/.config/neomutt/acc1<enter><change-folder>!<enter>'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.config/neomutt/acc2<enter><change-folder>!<enter>'
+macro index <f4> '<sync-mailbox><enter-command>source ~/.config/neomutt/acc3<enter><change-folder>!<enter>'
+
+macro index,pager <F5> ":source ~/.config/neomutt/neomuttrc\n"              "Reload the muttrc"
+bind index G imap-fetch-mail
+
+
+set pgp_default_key = "D03B218CAE771F77D7F920D9823A6154426408D3"
+
+
+##### Keybindings
+macro index,pager <F1> "<sidebar-toggle-visible><enter>"
+macro index,pager d "<save-message><enter>"
+set delete=yes
+unset confirmappend                                              # don't ask, just do!
+
+##### GPG options
+set crypt_autosign = yes
+set crypt_replyencrypt = yes
+set crypt_replysign=yes
+set crypt_replysignencrypted=yes
+set crypt_use_gpgme=yes
+set pgp_timeout = 3600
+set pgp_timeout=3600
+set pgp_use_gpg_agent = yes
+
+##### Other Options
+set imap_keepalive = 300            # Keep IMAP connection alive by polling intermittently (time in seconds).
+set mail_check = 90                 # How often to check for new mail (time in seconds).
+set editor="nvim -c 'set tw=70 et'" # Set the editor to neovim
+set edit_headers                    # See the headers when editing
+
+# Adresses
+set query_command="~/fzfadd.sh %s"
+
+# set flag_chars = "1234567890abcdefghijklmnto"
+ set flag_chars = "*!Dd↩ONon- "
+set mailcap_path = "~/.config/neomutt/mailcap
+set implicit_autoview
+auto_view text/html
+auto_view text/calendar
+alternative_order text/plain text/enriched text/html     # save html for last
+
+set autoedit
+
+## Set up preview pane for messages
+# set pager_index_lines		= 10	# number of index lines to show
+# set pager_context			= 3     # number of context lines to show
+# set pager_stop          = yes   # don't go to next message automatically
+# set menu_scroll         = yes   # scroll in menus
+# set tilde               = yes   # show tildes like in vim
+# set markers             = no	# no ugly plus signs
+
+
+
+#ignore *
+#unignore from date subject to cc
+
+
+## Look and feel -----------------------------------------------------------------
+#set date_format			= "!%a, %b %d, %Y at %I:%M:%S%p %Z"a
+set index_format		= '%4C [%Z] %{%Y-%m-%d} %-25.25L (%?l?%4l&%4c?) %s'	# Customize the messaage index display
+set sort_browser		= alpha											# Sort entries in the file browser
+set sort_aux			= reverse-last-date-received					# Sort mails in reverse date order (threads)
+set sort				= reverse-date-received							# Sort with the newest at the top
+set uncollapse_jump		= yes											# Don't jump to next unread message when a thread is collapsed
+#color progress white red
+
+set wait_key = no
+source ./sidebar.muttrc
+
+
+##### Colors
+# source ~/.config/neomutt/dracula_theme/dracula.muttrc
+source ~/.config/neomutt/colors.muttrc

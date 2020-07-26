@@ -1,0 +1,25 @@
+﻿---
+TabWidth: '4'
+UseTab: ForIndentation
+IndentWidth: 4
+AllowShortFunctionsOnASingleLine: false
+AllowShortBlocksOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: true
+AlwaysBreakBeforeMultilineStrings: true
+BinPackParameters: true
+BreakBeforeBraces: Attach
+ColumnLimit: 80
+IndentCaseLabels: true
+IndentWrappedFunctionNames: true
+MaxEmptyLinesToKeep: 1
+PointerAlignment: Left
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesBeforeTrailingComments: 4
+SpacesInAngles: false
+SpacesInParentheses: false
+AlignEscapedNewlinesLeft: false
+AlignTrailingComments: true
+
+...

@@ -1,0 +1,36 @@
+[general]
+pythonfile = ~/.local/bin/offlineimap_pass.py
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+accounts = mailbox,committance
+
+
+[Account mailbox]
+localrepository = mailbox-local
+remoterepository = mailbox-remote
+
+[Repository mailbox-local]
+type = Maildir
+localfolders = ~/mail/mailbox
+
+[Repository mailbox-remote]
+type = IMAP
+cert_fingerprint  = 32fdb81e27f28532e3c24aab0ddfdd0f56dd34c06934a907bc2128eb
+remotehost = imap.mailbox.org
+remoteuser = pablo1@mailbox.org
+remotepasseval = get_pass("mailbox.org/pablo1")
+
+
+[Account committance]
+localrepository = committance-local
+remoterepository = committance-remote
+
+[Repository committance-local]
+type = Maildir
+localfolders = ~/mail/committance
+
+[Repository committance-remote]
+type = IMAP
+cert_fingerprint  = 29f710db8bb295eff9be14173e7216a6cec4cd40
+remotehost = imap.1und1.com
+remoteuser = pablo.ovelleiro@committance.com
+remotepasseval = get_pass("committance/pablo.ovelleiro@committance.com")

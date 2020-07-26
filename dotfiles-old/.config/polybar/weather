@@ -1,0 +1,16 @@
+#!/bin/python
+
+import urllib.request, json
+
+city = "Cologne"
+api_key = "5fc37f1a4f45fcd2ac8d404aaf19787d"
+units = "Metric"
+unit_key = "C"
+
+url = "http://api.openweathermap.org/data/2.5/weather?q={}&APPID={}&units={}".format(city, api_key, units)
+weather = eval( str( urllib.request.urlopen( url).read())[2:-1])
+
+info = weather["weather"][0]["description"].capitalize()
+temp = int(float(weather["main"]["temp"]))
+
+print("%s, %i °%s" % (info, temp, unit_key))

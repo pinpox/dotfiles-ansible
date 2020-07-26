@@ -1,0 +1,206 @@
+# vim:filetype=i3
+
+set $mod Mod4
+bindsym $mod+Shift+s sticky toggle
+
+# font pango:Terminus 14px
+ font pango:Roboto Mono 14px
+# font pango:Ubuntu Mono, FontAwesome 8
+for_window [window_role="pop-up"] floating enable
+new_window pixel 2
+new_float pixel 2
+
+
+exec        srandrd display_handler
+exec        xscreensaver -no-splash
+exec_always --no-startup-id xbindkeys -f .xbindkeys_config/speed_c/pablo
+exec_always setxkbmap us -variant colemak -option "caps:escape"
+exec_always nitrogen --restore
+exec        nm-applet
+exec_always ~/.screenlayout/default.sh
+exec_always ~/.local/bin/launch_polybar
+
+bindsym XF86AudioPrev         exec playerctl previous
+bindsym XF86AudioNext         exec playerctl next
+bindsym XF86AudioStop         exec playerctl stop
+bindsym XF86AudioPlay         exec playerctl play-pause
+bindsym --release $mod+n      exec xdotool type --delay 80 --clearmodifiers --window $(xdotool getwindowfocus) '¯\_(ツ)_/¯'
+bindsym $mod+p                exec rofi -show run -lines 7 -eh 1 -bw 0  -fullscreen -padding 200
+bindsym $mod+Shift+p          exec rofi-pass -show combi -lines 7 -eh 3 -bw 0 -matching fuzzy
+bindsym $mod+Pause            exec chromium
+# bindsym $mod+Shift+x          exec ~/.local/bin/lock
+bindsym $mod+Shift+x          exec xscreensaver-command -lock
+bindsym $mod+Shift+Escape     exec xkill
+bindsym --release Print exec scrot -szb
+# bindsym --release Print       exec scrot -szb -e '~/.local/bin/dropshadow.sh \$f'
+bindcode 156                  exec --no-startup-id " termite -e hollywood"
+bindsym $mod+space            exec emacsclient -nc
+
+# Make the currently focused window a scratchpad
+bindsym $mod+minus move scratchpad
+# Show the first scratchpad window
+bindsym $mod+plus scratchpad show
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec termite
+bindsym $mod+Shift+Return exec  termite -e nvim
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# change focus
+bindsym $mod+j               focus left
+bindsym $mod+Tab             focus right
+bindsym $mod+k               focus down
+bindsym $mod+l               focus up
+bindsym $mod+semicolon       focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left            focus left
+bindsym $mod+Down            focus down
+bindsym $mod+Up              focus up
+bindsym $mod+Right           focus right
+
+# move focused window
+bindsym $mod+Shift+j         move left
+bindsym $mod+Shift+k         move down
+bindsym $mod+Shift+l         move up
+bindsym $mod+Shift+semicolon move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left      move left
+bindsym $mod+Shift+Down      move down
+bindsym $mod+Shift+Up        move up
+bindsym $mod+Shift+Right     move right
+
+# split in horizontal orientation
+bindsym $mod+h split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+Control+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+bindsym $mod+d focus child
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# resize window (you can also use the mouse for that)
+# These bindings trigger as soon as you enter the resize mode
+mode "resize" {
+# Pressing left will shrink the window’s width.
+# Pressing right will grow the window’s width.
+# Pressing up will shrink the window’s height.
+# Pressing down will grow the window’s height.
+
+ bindsym j         resize shrink width  10 px or 10 ppt
+ bindsym k         resize grow   height 10 px or 10 ppt
+ bindsym l         resize shrink height 10 px or 10 ppt
+ bindsym semicolon resize grow   width  10 px or 10 ppt
+
+# same bindings, but for the arrow keys
+ bindsym Left      resize shrink width  10 px or 10 ppt
+ bindsym Down      resize grow   height 10 px or 10 ppt
+ bindsym Up        resize shrink height 10 px or 10 ppt
+ bindsym Right     resize grow   width  10 px or 10 ppt
+
+# back to normal: Enter or Escape
+ bindsym Return mode "default"
+ bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+
+bindsym --release $mod+shift+minus exec  xdotool type --clearmodifiers --window $(xdotool getwindowfocus) '¯\_(ツ)_/¯'
+for_window [class="^.*"] border pixel 2
+gaps inner 6
+gaps outer 0
+smart_gaps on
+smart_borders no_gaps
+
+
+#                 variable Xresource/backup
+set_from_resource $black   color0 #0000ff
+set_from_resource $red     color1 #0000ff
+set_from_resource $green   color2 #0000ff
+set_from_resource $yellow  color3 #0000ff
+set_from_resource $blue    color4 #0000ff
+set_from_resource $magenta color5 #0000ff
+set_from_resource $cyan    color6 #0000ff
+set_from_resource $white   color7 #0000ff
+set_from_resource $grey    color8 #0000ff
+
+# class                 border  backgr. text     indicator
+client.focused          $blue   $blue   $black   $blue
+client.focused_inactive $grey   $grey   $black   $black
+client.unfocused        $grey   $black  $blue    $black
+client.urgent           $red1   $red    $magenta $red
+
+
+
+# bar {
+#         status_command conky -c $HOME/conkyrc
+#	mode dock
+#	position top
+#	font pango:open sans 7.8
+#	strip_workspace_numbers yes
+
+# colors {
+# #         background #E4E5E8
+# #         statusline #788491
+# #         separator #51c4d4
+
+#         focused_workspace  $grey $grey $blue
+#         active_workspace   $white $white $blue
+#         inactive_workspace $black $black $white
+#         urgent_workspace   $red $red $white
+#     }
+# }

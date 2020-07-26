@@ -1,0 +1,5 @@
+text/html;  w3m -dump -o document_charset=%{charset} '%s'; nametemplate=%s.html; copiousoutput
+image/jpeg; geequi %s
+audio/mpeg; vlc %s
+text/calendar; vcal -all %s;
+#text/plain; cat %s | sed 's/./g/g' ; copiousoutput
