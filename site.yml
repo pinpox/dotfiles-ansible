@@ -1,8 +1,9 @@
 ---
  - hosts: localhost
    roles:
-     - ansible-alacritty
-     - ansible-fonts
+     # - ansible-alacritty
+     # - ansible-fonts
+     - ansible-termite
      - ansible-xresources
      - ansible-vim
      - ansible-i3
