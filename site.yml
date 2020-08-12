@@ -2,8 +2,6 @@
  - hosts: localhost
    connection: local
    roles:
-     - ansible-alacritty
-     - ansible-fonts
      - ansible-i3
      - ansible-neomutt
      - ansible-polybar
@@ -12,3 +10,5 @@
      - ansible-vim
      - ansible-xresources
      - ansible-zsh
+     # - ansible-alacritty
+     # - ansible-fonts
