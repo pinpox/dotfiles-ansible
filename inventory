@@ -1,8 +1,0 @@
-kartoffel ansible_connection=local
-zitrone ansible_user=binaryplease
-void ansible_user=pablo  ansible_ssh_host=192.168.56.104
-buche ansible_user=binaryplease
-lauch ansible_user=binaryplease
-birne ansible_user=binaryplease
-kfbox ansible_user=pablo
-analysis-poc ansible_user=pablo
