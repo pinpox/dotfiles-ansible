@@ -12,7 +12,7 @@ git submodule update
 ## Run
 
 ```
-ansible-playbook -i inventory  site.yml
+ansible-playbook  site.yml
 ```
 
 ## Roles used
